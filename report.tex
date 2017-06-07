@@ -98,5 +98,24 @@ SplitInformation:
 SplitInformation(S,A) = - \sum_{i=1}^{c} \frac{|S_i|}{|S|} log_2 \frac{|S_i|}{|S|}
 \]
 Candidate elimination algo:
-todo photo
+\begin{figure}[H]
+%\begin{center}
+\includegraphics[width=.5\textwidth]{candidate_elim.png}
+%\end{center}
+\end{figure}
+%\FloatBarrier
+Euklidian Distance:\\
+\[
+d(P(x_1, y_1), P(x_2, y_2)) = \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}
+\]
+Manhattan Distance:\\
+\[
+d(P(x_1, y_1), P(x_2, y_2)) = |x_1-x_2| + |y_1-y_2|
+\]
+Q-learning:
+\begin{figure}[H]
+\includegraphics[width=.5\textwidth]{Q.png}
+\end{figure}
+
+
 \end{document}
