@@ -64,14 +64,14 @@
   \newpage
   }
 \makeatother
-\author{Nicolas Potie\\ Master 2 en bioinformatique et modélisation}
+\author{Nicolas Potie, Yann Sp\"ori\\ Master 2 en bioinformatique et modélisation}
 \title{\\INFOH410:Summary}
 \date{June 2017}
 
 %partie concernant la gestion des entÍtes
 \pagestyle{fancy}
 \renewcommand\headrulewidth{1pt}
-\fancyhead[L]{Nicolas Potie}
+\fancyhead[L]{Nicolas Potie, Yann Sp\"ori}
 \renewcommand\footrulewidth{1pt}
 \fancyfoot[C]{\thepage}
 %fin
@@ -81,9 +81,22 @@
 %\tableofcontents
 \pagebreak
 
-\section{Introduction}
-
-\section{ADAR}
-
-
+Entrophy:\\
+\[
+E(S)=-p_{+}(log_2{p_{+}})-p_{-}(log_2{p_{-}})
+\]
+Information gain:\\
+\[
+G(s,a) = E(S)-\sum_{v \in Values(A)} \frac{|S_v|}{|S|}E(S_v)
+\]
+Gain Ratio:
+\[
+GR(S,A) = \frac{Gain(S,A)}{SplitInformation(S,A)}
+\]
+SplitInformation:
+\[
+SplitInformation(S,A) = - \sum_{i=1}^{c} \frac{|S_i|}{|S|} log_2 \frac{|S_i|}{|S|}
+\]
+Candidate elimination algo:
+todo photo
 \end{document}
